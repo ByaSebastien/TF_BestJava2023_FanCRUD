@@ -1,0 +1,9 @@
+<button routerLink="/create">Create a new fan</button>
+<ul>
+  <li *ngFor="let fan of fans">
+    <p>{{fan.name}} {{fan.birthdate | date : 'dd-MM-yy'}}</p>
+    <button [routerLink]="'/'+fan.id">Details</button>
+    <button [routerLink]="'/update/'+fan.id">Update</button>
+    <button (click)="delete(fan.id)">Delete</button>
+  </li>
+</ul>

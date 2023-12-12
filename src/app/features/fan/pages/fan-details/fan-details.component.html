@@ -1,0 +1,10 @@
+<div *ngIf="fan">
+  <p>Nom : {{fan.name}}</p>
+  <p>Birthdate : {{fan.birthdate | date : 'dd-MM-yyyy'}}</p>
+  <ul *ngIf="fan.series">
+    <li *ngFor="let serie of fan.series">
+      <p>{{serie.title}}</p>
+    </li>
+  </ul>
+  <button routerLink="/">Back to list</button>
+</div>

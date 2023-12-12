@@ -1,0 +1,15 @@
+<form [formGroup]="fanForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Name" formControlName="name">
+
+  <input type="date" formControlName="birthdate">
+
+  <div formArrayName="series">
+    <div *ngFor="let serie of series.controls; let i = index">
+      <input type="text" placeholder="title" [formControlName]="i">
+      <button type="button" (click)="removeSerie(i)">✖️</button>
+    </div>
+  </div>
+  <button type="button" (click)="addSerie()">Add serie</button>
+  <button type="submit">Create</button>
+</form>
+<button routerLink="/">Back to list</button>

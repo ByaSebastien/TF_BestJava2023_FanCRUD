@@ -1,0 +1,16 @@
+:host{
+  display: block;
+  width: fit-content;
+  margin: auto;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px auto;
+
+    *{
+      margin: 5px 0px;
+    }
+  }
+}

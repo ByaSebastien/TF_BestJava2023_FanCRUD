@@ -1,0 +1,36 @@
+{
+  "fan": [
+    {
+      "id": 1,
+      "name": "Seb",
+      "birthdate": "1991-03-27",
+      "series": [
+        {
+          "title": "Le dernier samuraï"
+        },
+        {
+          "title": "Les visiteurs"
+        },
+        {
+          "title": "Dragon ball Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Roger",
+      "birthdate": "1980-03-27",
+      "series": [
+        {
+          "title": "Roger rabbit"
+        },
+        {
+          "title": "Roger au Montenegro"
+        },
+        {
+          "title": "Roger à la pêche au moules"
+        }
+      ]
+    }
+  ]
+}
